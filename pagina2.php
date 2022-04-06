@@ -5,10 +5,10 @@
     <title>PP'S PAGE</title>
     <meta charset="utf-8" />
     <title>PP'S PAGE</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <meta content="" name="description" />
-    <meta content="" name="author" />
-    <link href="css/style.css" />
+    <?php
+include ‘include/head.php;
+?>
+  <link href="css/style.css" />
 </head>
 
 <body>
