@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>PP'S PAGE</title>
-    <meta charset="utf-8" />
-    <title>PP'S PAGE</title>
-    <?php
-include ‘include/head.php;
+<?php
+include 'include/head.php';
 ?>
-  <link href="css/style.css" />
-</head>
-
 <body>
     <a href="index.html">INDEX</a>
     <a href="insert.html">REGISTRARTE</a>

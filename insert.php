@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>PP'S PAGE</title>
-    <meta charset="utf-8" />
-    <title>PROCESADORS</title>
-    <?php
+<?php
 include 'includes/head.php';
 ?>
-    <link href="style.css"
-    rel="stylesheet" type="text/css">
-</head>
+
 
 <body>
     <a href="index.html">INDEX</a>
