@@ -4,8 +4,8 @@ include 'includes/head.php';
 
 
 <body>
-    <a href="index.html">INDEX</a>
-    <a href="pagina2.html">PLACA BASE</a>
+    <a href="index.php">INDEX</a>
+    <a href="pagina2.php">PLACA BASE</a>
     <h1>REGISTRARTE</h1>
     <form action="/action_page.php">
         <label for="fname">Introduir nom:</label><br>
