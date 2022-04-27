@@ -1,9 +1,11 @@
 <?php
-include 'include/head.php';
+include 'includes/head.php';
+?>
+</html>
+<?php
+include 'includes/header.php';
 ?>
 <body>
-    <a href="index.php">INDEX</a>
-    <a href="insert.php">REGISTRARTE</a>
     <h1>PLACA BASE</h1>
     <p>La placa mare, placa base o targeta mare (en anglès motherboard)[1] és la targeta de circuits impresos central a
         l'ordinador que conté el microprocessador, la memòria RAM del sistema, circuits electrònics de suport, la ROM i

@@ -1,8 +1,10 @@
 <?php
 include 'includes/head.php';
 ?>
-
-
+</html>
+<?php
+include 'includes/header.php';
+?>
 <body>
     <a href="index.php">INDEX</a>
     <a href="pagina2.php">PLACA BASE</a>
