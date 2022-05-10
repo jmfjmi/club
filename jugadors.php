@@ -29,7 +29,7 @@ echo "<tr>
 <td>".$row['1rCognom']."</td>
 <td>".$row['2nCognom']."</td>
 <td>".$row['DataDeNaixament']."</td>
-<td>".$row['Posició']."</td>
+<td>".$row['Posicio']."</td>
 <td>".$row['Numero']."</td>
 <td>".$row['Procedencia']."</td>
 
