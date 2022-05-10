@@ -8,12 +8,15 @@ include 'includes/header.php';
    <table>
 <thead>
 <tr>
-<td>ID</td>
+<td>IDEquip</td>
 <td>DNI</td>
 <td>NOM</td>
 <td>1rCognom</td>
 <td>2nCognom</td>
 <td>DATA DE NAIXAMENT</td>
+<td>Posició</td>
+<td>Numero</td>
+<td>Procedencia</td>
 
 </tr>
 </thead>
