@@ -16,6 +16,8 @@ include 'includes/header.php';
 <td>DATA DE NAIXAMENT</td>
 <td>EMAIL</td>
 <td>TELEFON</td>
+
+
 </tr>
 </thead>
 <tbody>
@@ -32,10 +34,7 @@ echo "<tr>
 <td>".$row['DataDeNaixament']."</td>
 <td>".$row['email']."</td>
 <td>".$row['telefon']."</td>
-<td>".$row['carrer']."</td>
-<td>".$row['pais']."</td>
-<td>".$row['ciutat']."</td>
-<td>".$row['codipostal']."</td>
+
 </tr>";
 }
 ?>
