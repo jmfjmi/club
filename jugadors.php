@@ -6,7 +6,7 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
    <table>
-<thead>4
+<thead>
 <tr>
 <td>ID</td>
 <td>DNI</td>
