@@ -5,17 +5,18 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-   <table>
-<thead>
-<tr>
-<td>ID</td>
-<td>NOM</td>
-<td>ESCUT</td>
 
-</tr>
-</thead>
-<tbody>
-<?php
+    <table class="table">
+  <thead>
+    <tr>
+     <td>ID</td>
+     <td>NOM</td>
+    <td>ESCUT</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <?php
 $query = "SELECT * FROM Club";
 $result = mysqli_query($dbh, $query) or die (mysqli_error($dbh));
 while ($row = mysqli_fetch_assoc($result)) {
@@ -23,9 +24,9 @@ echo "<tr>
 <td>".$row['idClub']."</td>
 <td>".$row['nom']."</td>
 <td>".$row['Escut']."</td>
-
 </tr>";
 }
 ?>
-</tbody>
-    </table>
+    </tr>
+  </tbody>
+</table>

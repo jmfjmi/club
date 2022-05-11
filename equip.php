@@ -5,19 +5,19 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-   <table>
-<thead>
-<tr>
-<td>ID</td>
+    <table class="table">
+  <thead>
+    <tr>
+    <td>ID</td>
 <td>NOM</td>
 <td>PREMIS</td>
 <td>FKIDCLUB</td>
 <td>FKIDCATEGORIA</td>
-
-</tr>
-</thead>
-<tbody>
-<?php
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <?php
 $query = "SELECT * FROM Equip";
 $result = mysqli_query($dbh, $query) or die (mysqli_error($dbh));
 while ($row = mysqli_fetch_assoc($result)) {
@@ -31,5 +31,6 @@ echo "<tr>
 </tr>";
 }
 ?>
-</tbody>
-    </table>
+    </tr>
+  </tbody>
+</table>
