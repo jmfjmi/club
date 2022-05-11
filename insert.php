@@ -22,7 +22,7 @@ include 'includes/header.php';
         <input type="date" id="DataDeNaixament" name="DataDeNaixament"><br><br>
         <label for="lname">Introduir email:</label><br>
         <input type="email" id="email" name="email" placeholder="exemple@gmail.com"><br><br>
-        <label for="lname">Introduir telefon:</label><br>
+        <label for="lname">Introduir telefon:</label><br>-
         <input type="number" id="telefon" name="telefon" placeholder="000000000"><br><br>
         <input type="submit" value="Confirmar">
     </form>
