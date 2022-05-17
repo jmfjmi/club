@@ -9,22 +9,15 @@ include 'includes/header.php';
     <a href="index.php">INDEX</a>
     <a href="pagina2.php">PLACA BASE</a>
     <h1>REGISTRARTE</h1>
-    <form action="/action_page.php" method="POST">
+    <form action="scripts/insert_soci.php" method="POST">
         <label for="fname">Introduir DNI:</label><br>
         <input type="text" id="DNI" name="DNI" placeholder="DNI"><br> 
         <label for="fname">Introduir nom:</label><br>
         <input type="text" id="Nom" name="Nom" placeholder="Nom"><br>
         <label for="lname">Introduir 1r cognom:</label><br>
-        <input type="text" id="1rCognom" name="1rCognom" placeholder="1rCognom"><br><br>
+        <input type="text" id="1rCognom" name="pCognom" placeholder="1rCognom"><br><br>
         <label for="lname">Introduir 2n cognom:</label><br>
-        <input type="text" id="2nCognom" name="2nCognom" placehol
-        
-        
-        
-        
-        
-        
-        der="2nCognom"><br><br>
+        <input type="text" id="2nCognom" name="sCognom" placeholder="2nCognom"><br><br>
         <label for="lname">Introduir data de naixament:</label><br>
         <input type="date" id="DataDeNaixament" name="DataDeNaixament"><br><br>
         <label for="lname">Introduir email:</label><br>
