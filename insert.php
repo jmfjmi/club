@@ -17,7 +17,14 @@ include 'includes/header.php';
         <label for="lname">Introduir 1r cognom:</label><br>
         <input type="text" id="1rCognom" name="1rCognom" placeholder="1rCognom"><br><br>
         <label for="lname">Introduir 2n cognom:</label><br>
-        <input type="text" id="2nCognom" name="2nCognom" placeholder="2nCognom"><br><br>
+        <input type="text" id="2nCognom" name="2nCognom" placehol
+        
+        
+        
+        
+        
+        
+        der="2nCognom"><br><br>
         <label for="lname">Introduir data de naixament:</label><br>
         <input type="date" id="DataDeNaixament" name="DataDeNaixament"><br><br>
         <label for="lname">Introduir email:</label><br>
