@@ -9,23 +9,27 @@ include 'includes/header.php';
     <a href="index.php">INDEX</a>
     <a href="pagina2.php">PLACA BASE</a>
     <h1>REGISTRARTE</h1>
-    <form action="/action_page.php" method="POST">
-        <label for="fname">Introduir DNI:</label><br>
-        <input type="text" id="DNI" name="DNI" placeholder="DNI"><br> 
-        <label for="fname">Introduir nom:</label><br>
-        <input type="text" id="Nom" name="Nom" placeholder="Nom"><br>
-        <label for="lname">Introduir 1r cognom:</label><br>
-        <input type="text" id="1rCognom" name="1rCognom" placeholder="1rCognom"><br><br>
-        <label for="lname">Introduir 2n cognom:</label><br>
-        <input type="text" id="2nCognom" name="2nCognom" placeholder="2nCognom"><br><br>
-        <label for="lname">Introduir data de naixament:</label><br>
-        <input type="date" id="DataDeNaixament" name="DataDeNaixament"><br><br>
-        <label for="lname">Introduir email:</label><br>
-        <input type="email" id="email" name="email" placeholder="exemple@gmail.com"><br><br>
-        <label for="lname">Introduir telefon:</label><br>
-        <input type="number" id="telefon" name="telefon" placeholder="000000000"><br><br>
-        <input type="submit" value="Confirmar">
-    </form>
+    <form action="#" target="" method="get" name="formDatosPersonales">
+
+	<label for="nombre">Nombre</label>
+	<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+
+	<label for="apellidos">Apellidos</label>
+	<input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+
+	<label for="email" />Email</label>
+	<input type="email" name="email" id="email" placeholder="email" required />
+
+	<label for="asunto">Asunto</label>
+	<input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
+
+	<label for="mensaje">Mensaje</label>
+	<textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+	
+	<input type="submit" name="enviar" value="ENVIAR"/>
+</form>
+
+
 </body>
 
 </html>

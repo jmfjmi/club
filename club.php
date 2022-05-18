@@ -2,6 +2,7 @@
 include 'includes/head.php';
 ?>
 </html>
+
 <?php
 include 'includes/header.php';
 ?>
@@ -23,7 +24,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 echo "<tr>
 <td>".$row['idClub']."</td>
 <td>".$row['nom']."</td>
-<td>".$row['Escut']."</td>
+<td><img src='/images/".$row['Escut']."' alt='Italian Trulli'></td>
 </tr>";
 }
 ?>
