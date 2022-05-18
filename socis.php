@@ -1,3 +1,6 @@
+
+ <h1>SOCIS</h1>
+
 <?php
 include 'includes/head.php';
 ?>
