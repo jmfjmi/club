@@ -1,5 +1,9 @@
 
+<<<<<<< Updated upstream
  <h1>SOCIS</h1>
+=======
+<h1> REGISTRE </h1>
+>>>>>>> Stashed changes
 
 <?php
 include 'includes/head.php';
@@ -20,6 +24,7 @@ include 'includes/header.php';
 <td>DATA DE NAIXAMENT</td>
 <td>EMAIL</td>
 <td>TELEFON</td>
+<td>opcions</td>
     </tr>
   </thead>
   <tbody>
@@ -36,7 +41,10 @@ echo "<tr>
 <td>".$row['DataDeNaixament']."</td>
 <td>".$row['email']."</td>
 <td>".$row['telefon']."</td>
-
+<td>
+  <a href='insert.php?id=".$row['idSocis']."'>Editar</a>
+  <a href='scripts/delete_soci.php?id=".$row['idSocis']."'>Eliminar</a>
+</td>
 </tr>";
 }
 ?>

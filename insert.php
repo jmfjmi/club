@@ -1,7 +1,20 @@
+<html>
 <?php
 include 'includes/head.php';
+$soci = null;
+if(isset($_GET['id'])){
+    $idSocis = $_GET['id'];
+    $query = "SELECT * FROM Socis WHERE idSocis = '".$_GET['id']."' ";
+    $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
+    $soci = mysqli_fetch_assoc($result);
+}
+
+$action = 'scripts/insert_soci.php';
+if($soci != null){
+    $action = 'scripts/update_soci.php';
+}
 ?>
-</html>
+
 
 <body>
   
@@ -37,6 +50,6 @@ include 'includes/header.php';
 </form>
 
 
-</body>
 
 </html>
+
