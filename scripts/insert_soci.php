@@ -21,3 +21,31 @@ if($result){
 }else{
     echo mysqli_error($dbh);
 }
+
+
+$idSocis = null;
+if(isset($_GET['id'])){
+    $idSocis = $_GET['id'];
+    $query = "SELECT * FROM Socis WHERE id = '$idSocis' ";
+    $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
+    $idSocis = mysqli_fetch_assoc($result);
+}
+
+$action = 'scripts/insert_soci.php';
+if($idSocis != null){
+    $action = 'update.php';
+}
+?>
+
+    <div class="container">
+
+ 
+            
+            
+                <?php
+                if($idSocis == null){
+                    echo 'NOU CLIENT';
+                }else{
+                    echo 'EDITA EL CLIENT';
+                }
+               

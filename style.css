@@ -1,6 +1,10 @@
 
 body{
+<<<<<<< Updated upstream
 background-color:#ef5856
+=======
+background-color:#ac2c2a
+>>>>>>> Stashed changes
 }
 
 
@@ -25,7 +29,8 @@ body h1{
 td{
     font-size: 17PX;
     color: #000000;
-    background-color: #008b00;
+    background-color: #8b0000;
+	border:3px solid #000;
 }
 
 --------------------------------------------------------------------
