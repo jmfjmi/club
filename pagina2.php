@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>PP'S PAGE</title>
-    <meta charset="utf-8" />
-    <title>PP'S PAGE</title>
-    <?php
-include ‘include/head.php;
+<?php
+include 'includes/head.php';
 ?>
-  <link href="css/style.css" />
-</head>
-
+</html>
+<?php
+include 'includes/header.php';
+?>
 <body>
-    <a href="index.html">INDEX</a>
-    <a href="insert.html">REGISTRARTE</a>
-    <h1>PLACA BASE</h1>
-    <p>La placa mare, placa base o targeta mare (en anglès motherboard)[1] és la targeta de circuits impresos central a
-        l'ordinador que conté el microprocessador, la memòria RAM del sistema, circuits electrònics de suport, la ROM i
-        ranures especials (slots) que permeten la connexió de targetes adaptadores addicionals. Aquestes targetes solen
-        realitzar funcions de control de perifèrics, com monitors, impressores, unitats de disc, etc. </p>
+    <h1>BASE DE DADES</h1>
+    <p>Una base de datos (del inglés: database) se encarga no 
+        solo de almacenar datos, sino también de conectarlos 
+        entre sí en una unidad lógica. En términos generales, 
+        una base de datos es un conjunto de datos estructurados
+        que pertenecen a un mismo contexto y, en cuanto a su función, 
+        se utiliza para administrar de forma electrónica grandes 
+        cantidades de información. En este sentido; una biblioteca 
+        puede considerarse una base de datos compuesta en su mayoría
+        por documentos y textos impresos en papel e indexados para
+        su consulta. Actualmente, y debido al desarrollo tecnológico 
+        de campos como la informática y la electrónica, la mayoría 
+        de las bases de datos están en formato digital, siendo este 
+        un componente electrónico, por tanto se ha desarrollado y se 
+        ofrece un amplio rango de soluciones al problema del almacenamiento 
+        de datos. </p>
 </body>
 
 </html>
