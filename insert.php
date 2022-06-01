@@ -1,31 +1,56 @@
+<html>
 <?php
 include 'includes/head.php';
+$soci = null;
+if(isset($_GET['id'])){
+    $idSocis = $_GET['id'];
+    $query = "SELECT * FROM Socis WHERE idSocis = '".$_GET['id']."' ";
+    $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
+    $soci = mysqli_fetch_assoc($result);
+}
+
+$action = 'scripts/insert_soci.php';
+if($soci != null){
+    $action = 'scripts/update_soci.php';
+}
 ?>
-</html>
-<?php
+
+
+<body>
+  
+    <h1>REGISTRARTE</h1>
+
+	<?php
 include 'includes/header.php';
 ?>
-<body>
-    <a href="index.php">INDEX</a>
-    <a href="pagina2.php">PLACA BASE</a>
-    <h1>REGISTRARTE</h1>
-    <form action="scripts/insert_soci.php" method="POST">
-        <label for="fname">Introduir DNI:</label><br>
-        <input type="text" id="DNI" name="DNI" placeholder="DNI"><br> 
-        <label for="fname">Introduir nom:</label><br>
-        <input type="text" id="Nom" name="Nom" placeholder="Nom"><br>
-        <label for="lname">Introduir 1r cognom:</label><br>
-        <input type="text" id="1rCognom" name="pCognom" placeholder="1rCognom"><br><br>
-        <label for="lname">Introduir 2n cognom:</label><br>
-        <input type="text" id="2nCognom" name="sCognom" placeholder="2nCognom"><br><br>
-        <label for="lname">Introduir data de naixament:</label><br>
-        <input type="date" id="DataDeNaixament" name="DataDeNaixament"><br><br>
-        <label for="lname">Introduir email:</label><br>
-        <input type="email" id="email" name="email" placeholder="exemple@gmail.com"><br><br>
-        <label for="lname">Introduir telefon:</label><br>
-        <input type="number" id="telefon" name="telefon" placeholder="000000000"><br><br>
-        <input type="submit" value="Confirmar">
-    </form>
-</body>
+    <form action="<?=$action?>" target="" method="POST">
+    <input type="hidden" name="id" value="<?=$soci['idSocis']?>">
+
+	<label for="nombre">Nom</label>
+	<input type="text" name="Nom" value="<?=$soci['Nom']?>" id="nombre" placeholder="Escribe tu nombre"/>
+
+	<label for="nombre">DNI</label>
+	<input type="text" name="DNI" value="<?=$soci['DNI']?>"   placeholder="Escribe tu DNI"/>
+
+    <label for="nombre">Llinatge</label>
+	<input type="text" name="pcognom" value="<?=$soci['1rCognom']?>"id="pcognom" placeholder="1r cognom"/>
+
+	<label for="apellidos">Segon llinatge</label>
+	<input type="text" name="scognom"value="<?=$soci['2nCognom']?>" id="scognom" placeholder="2n cognom"/>
+
+    <label for="apellidos">Telefon</label>
+	<input type="text" name="telefon" value="<?=$soci['telefon']?>"id="telefon" placeholder="Introdueix el telefon"/>
+
+	<label for="email"> Email</label>
+	<input type="email" name="email"value="<?=$soci['email']?>" id="email" placeholder="Introdueix el teu email" required />
+
+	<label for="telefon">Data de naixament </label>
+	<input type="date" name="datadenaixament" id="datadenaixament " placeholder="Escriu la data del teu naixament "/>
+	
+	<input type="submit" name="enviar" value="ENVIAR"/>
+</form>
+
+
 
 </html>
+
