@@ -23,25 +23,26 @@ if($soci != null){
 	<?php
 include 'includes/header.php';
 ?>
-    <form action="scripts/insert_soci.php" target="" method="POST">
+    <form action="<?=$action?>" target="" method="POST">
+    <input type="hidden" name="id" value="<?=$soci['idSocis']?>">
 
 	<label for="nombre">Nom</label>
-	<input type="text" name="Nom" id="nombre" placeholder="Escribe tu nombre"/>
+	<input type="text" name="Nom" value="<?=$soci['Nom']?>" id="nombre" placeholder="Escribe tu nombre"/>
 
 	<label for="nombre">DNI</label>
-	<input type="text" name="DNI"  placeholder="Escribe tu DNI"/>
+	<input type="text" name="DNI" value="<?=$soci['DNI']?>"   placeholder="Escribe tu DNI"/>
 
     <label for="nombre">Llinatge</label>
-	<input type="text" name="pcognom" id="pcognom" placeholder="1r cognom"/>
+	<input type="text" name="pcognom" value="<?=$soci['1rCognom']?>"id="pcognom" placeholder="1r cognom"/>
 
 	<label for="apellidos">Segon llinatge</label>
-	<input type="text" name="scognom" id="scognom" placeholder="2n cognom"/>
+	<input type="text" name="scognom"value="<?=$soci['2nCognom']?>" id="scognom" placeholder="2n cognom"/>
 
     <label for="apellidos">Telefon</label>
-	<input type="text" name="telefon" id="telefon" placeholder="Introdueix el telefon"/>
+	<input type="text" name="telefon" value="<?=$soci['telefon']?>"id="telefon" placeholder="Introdueix el telefon"/>
 
 	<label for="email"> Email</label>
-	<input type="email" name="email" id="email" placeholder="Introdueix el teu email" required />
+	<input type="email" name="email"value="<?=$soci['email']?>" id="email" placeholder="Introdueix el teu email" required />
 
 	<label for="telefon">Data de naixament </label>
 	<input type="date" name="datadenaixament" id="datadenaixament " placeholder="Escriu la data del teu naixament "/>
