@@ -8,10 +8,10 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-
     <table class="table">
   <thead>
-    <tr>
+  <a class="btn btn-primary" href="new-client.php">INSERTAR NOU CLIENT</a>
+  <tr>
     <td>ID</td>
 <td>DNI</td>
 <td>NOM</td>
