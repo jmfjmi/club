@@ -13,6 +13,7 @@ $query = "UPDATE Socis SET Nom='$nom' ,DNI='$DNI' , 1rCognom='$p_cognom' ,
 2nCognom='$s_cognom' , DataDeNaixament='$datadenaixament' , email='$email' , 
 telefon='$telefon'  WHERE idSocis = '$id_socis' ";
 
+
 $result = mysqli_query($dbh, $query);
 
 if($result){
