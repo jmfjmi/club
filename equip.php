@@ -27,10 +27,17 @@ echo "<tr>
 <td>".$row['Premis']."</td>
 <td>".$row['fkidClub']."</td>
 <td>".$row['fkidCategoria']."</td>
-
+<td>
+  <a href='insert_equip.php?id=".$row['idEquip']."'><i class='bi bi-pencil'></i></a>
+  <a href='scripts/delete_equip.php?id=".$row['idEquip']."'>Eliminar</a>
+</td>
 </tr>";
 }
 ?>
-    </tr>
   </tbody>
+
 </table>
+
+
+<footer> <a class="btn btn-primary" href="insert_equip.php">INSERTAR NOU CLIENT</a></footer>
+
