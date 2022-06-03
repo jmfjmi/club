@@ -1,3 +1,0 @@
-# club
-nyaaaa
-yamate kudasai
