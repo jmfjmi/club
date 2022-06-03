@@ -10,7 +10,7 @@ include 'includes/header.php';
 ?>
     <table class="table">
   <thead>
-  <a class="btn btn-primary" href="new-client.php">INSERTAR NOU CLIENT</a>
+ 
   <tr>
     <td>ID</td>
 <td>DNI</td>
@@ -45,4 +45,8 @@ echo "<tr>
 }
 ?>
   </tbody>
+
 </table>
+
+
+<footer> <a class="btn btn-primary" href="insert.php">INSERTAR NOU CLIENT</a></footer>
