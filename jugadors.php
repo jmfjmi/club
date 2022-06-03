@@ -24,7 +24,7 @@ include 'includes/header.php';
   <?php
 $query = "SELECT * FROM Jugadors";
 $result = mysqli_query($dbh, $query) or die (mysqli_error($dbh));
-while ($row = mysqli_fetch_assoc($result)) {
+while ($row = mysqli_fetch_assoc($result)) 
 echo "<tr>
 <td>".$row['fkidEquip']."</td>
 <td>".$row['DNI']."</td>
@@ -35,9 +35,8 @@ echo "<tr>
 <td>".$row['Posicio']."</td>
 <td>".$row['Numero']."</td>
 <td>".$row['Procedencia']."</td>
-
 </tr>";
-}
 ?>
   </tbody>
 </table>
+<footer> <a class="btn btn-primary" href="insert.php">INSERTAR NOU CLIENT</a></footer>
