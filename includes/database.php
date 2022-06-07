@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL & ~E_NOTICE);
 $dbh = mysqli_connect('localhost', 'root', '');
 if (!$dbh) {
 echo "Error db_connect: error en mysqli_connect user: (mal usuario/password?)<br>";

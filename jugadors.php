@@ -39,4 +39,4 @@ echo "<tr>
 ?>
   </tbody>
 </table>
-<footer> <a class="btn btn-primary" href="insert.php">INSERTAR NOU CLIENT</a></footer>
+<footer> <a class="btn btn-primary" href="insert_jugador.php">INSERTAR NOU CLIENT</a></footer>
