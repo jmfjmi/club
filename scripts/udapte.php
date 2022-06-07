@@ -16,4 +16,3 @@ if($result){
     header('Location: ../socis.php');
 }else{
     echo mysqli_error($dbh);
-}
