@@ -32,13 +32,26 @@ include 'includes/header.php';
 	<label for="nombre">Nom</label>
 	<input type="text" name="Nom" value="<?=$equip['Nom']?>" id="Nom"  placeholder="Escribe el nombre del equipo"/>
 
-    <label for="nombre">fkidClub</label>
-	<input type="text" name="fkidClub" value="<?=$equip['fkidClub']?>"id="fkidClub" placeholder="Club"/>
+    <select name="fkidCategoria">
+		<?php
+		$query = "SELECT * FROM Categoria";
+		$result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
+		while($equip = mysqli_fetch_assoc($result)){
+			echo '<option value="' . $Categoria['idCategoria'] . '">'. $Categoria['nom'] . '</option>';
+		}
+		?>
+	</select>
 
-	<label for="apellidos">Segon llinatge</label>
-	<input type="text" name="fkidCategoria"value="<?=$equip['fkidCategoria']?>" id="fkidCategoria" placeholder="Categoria"/>
+	<select name="fkidClub">
+		<?php
+		$query = "SELECT * FROM Club";
+		$result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
+		while($equip = mysqli_fetch_assoc($result)){
+			echo '<option value="' . $Club['idClub'] . '">'. $Club['nom'] . '</option>';
+		}
+		?>
+	</select>
 
-	
 	<input type="submit" name="enviar" value="ENVIAR"/>
 </form>
 
