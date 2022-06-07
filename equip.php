@@ -39,5 +39,5 @@ echo "<tr>
 </table>
 
 
-<footer> <a class="btn btn-primary" href="insert_equip.php">INSERTAR NOU CLIENT</a></footer>
+<footer> <a class="btn btn-primary" href="insert2_equip.php/">INSERTAR NOU CLIENT</a></footer>
 
