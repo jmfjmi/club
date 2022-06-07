@@ -11,6 +11,8 @@ $Posicio= $_POST['Posició'];
 $Numero = $_POST['Numero'];
 $Procedencia = $_POST['Procedencia'];
 
+print_r($_POST);
+
 
 $query = "INSERT INTO Jugadors (fkidequip,DNI, Nom, 1rCognom, 2nCognom, DataDeNaixament, 
 Posició, Numero,Procedencia ) 
