@@ -7,7 +7,7 @@ $nom = $_POST['Nom'];
 $p_cognom = $_POST['pcognom'];
 $s_cognom = $_POST['scognom'];
 $datadenaixament = date('Y-m-d', strtotime($_POST['datadenaixament']));
-$Posició = $_POST['Posició'];
+$Posicio= $_POST['Posició'];
 $Numero = $_POST['Numero'];
 $Procedencia = $_POST['Procedencia'];
 
@@ -15,8 +15,8 @@ $Procedencia = $_POST['Procedencia'];
 $query = "INSERT INTO Jugadors (fkidequip,DNI, Nom, 1rCognom, 2nCognom, DataDeNaixament, 
 Posició, Numero,Procedencia ) 
 VALUES ('$fkidEquip','$DNI','$nom', '$p_cognom', 
-'$s_cognom', '$datadenaixament', '$fkidEquip
-'$Posició', '$Numero','$Procedencia')";
+'$s_cognom', '$datadenaixament', 
+'$Posicio', '$Numero','$Procedencia')";
 
 echo $query ;
 

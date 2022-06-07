@@ -46,17 +46,16 @@ include 'includes/header.php';
 	<label for="Data de naixament">Data de naixament </label>
 	<input type="date" name="datadenaixament" id="datadenaixament " placeholder="Escriu la data del teu naixament "/>
 	
-	<label for="nombre">Procedencia</label>
-	<input type="text" name="Procedencia" value="<?=$jugadors['Procedencia']?>"   placeholder="Escribe la teva procedencia"/>
-
-
 	<label for="Posició"> Posició</label>
 	<input type="text" name="posicio"value="<?=$jugadors['Posició']?>" id="Posició" placeholder="Introdueix la teva posicio" required />
 
-
-
 	<label for="Numero">Numero</label>
 	<input type="text" name="Numero" value="<?=$jugadors['Numero']?>"id="telefon" placeholder="Introdueix el numero"/>
+
+	
+	<label for="nombre">Procedencia</label>
+	<input type="text" name="Procedencia" value="<?=$jugadors['Procedencia']?>"   placeholder="Escribe la teva procedencia"/>
+
 
 	<input type="submit" name="enviar" value="ENVIAR"/>
 </form>
