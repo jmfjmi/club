@@ -1,6 +1,7 @@
 <?php
 include 'includes/head.php';
 ?>
+<h1>EQUIPS</h1>
 </html>
 <?php
 include 'includes/header.php';
@@ -39,5 +40,5 @@ echo "<tr>
 </table>
 
 
-<footer> <a class="btn btn-primary" href="insert2_equip.php">INSERTAR NOU CLIENT</a></footer>
+<footer> <a class="btn btn-primary" href="insert2_equip.php">INSERTAR NOU EQUIP</a></footer>
 
