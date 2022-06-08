@@ -36,8 +36,8 @@ include 'includes/header.php';
 		<?php
 		$query = "SELECT * FROM Categoria";
 		$result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
-		while($equip = mysqli_fetch_assoc($result)){
-			echo '<option value="' . $Categoria['idCategoria'] . '">'. $Categoria['nom'] . '</option>';
+		while($categoria = mysqli_fetch_assoc($result)){
+			echo '<option value="' . $categoria['idCategoria'] . '">'. $categoria['Nom'] . '</option>';
 		}
 		?>
 	</select>
@@ -46,8 +46,8 @@ include 'includes/header.php';
 		<?php
 		$query = "SELECT * FROM Club";
 		$result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
-		while($equip = mysqli_fetch_assoc($result)){
-			echo '<option value="' . $Club['idClub'] . '">'. $Club['nom'] . '</option>';
+		while($club = mysqli_fetch_assoc($result)){
+			echo '<option value="' . $club['idClub'] . '">'. $club['nom'] . '</option>';
 		}
 		?>
 	</select>
