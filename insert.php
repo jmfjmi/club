@@ -11,7 +11,7 @@ if(isset($_GET['id'])){
 
 $action = 'scripts/insert_soci.php';
 if($soci != null){
-    $action = 'scripts/update_soci.php';
+    $action = 'scripts/update.php';
 }
 ?>
 

@@ -1,4 +1,4 @@
-<?php
+ <?php
 include '../includes/database.php';
 
 $nom = $_POST['Nom'];
@@ -8,7 +8,12 @@ $datadenaixament = $_POST['DataDeNaixament'];
 $email = $_POST['email'];
 $telefon = $_POST['telefon'];
 
-$query = "UPDATE Socis SET Nom = '$nom', 1rCognom = '$p_cognom', 2nCognom = '$s_cognom', DataDeNaixament = '$datadenaixament', email = '$email', telefon = '$telefon';
+
+$query = "INSERT INTO Socis (Nom, 1rCognom, 2nCognom, DataDeNaixament, email, telefon ) 
+VALUES ('$nom', '$p_cognom', '$s_cognom', '$datadenaixament', '$email', '$telefon')";
+
+$query = "UPDATE Socis SET Nom ='$nom', 1rCognom ='$p_cognom', 2nCognom ='$s_cognom', 
+DataDeNaixament ='$datadenaixament', email ='$email', telefon = '$telefon'  WHERE idSocis = '$idSocis' ";
 
 $result = mysqli_query($dbh, $query);
 
@@ -16,3 +21,4 @@ if($result){
     header('Location: ../socis.php');
 }else{
     echo mysqli_error($dbh);
+}
