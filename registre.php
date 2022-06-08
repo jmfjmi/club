@@ -3,6 +3,9 @@
 <?php
 include 'includes/head.php';
 ?>
+<?php
+include 'includes/header.php';
+?>
 <body>
   
     <a href="jugadors.php"> REGISTRE COM A JUGADORS</a>
