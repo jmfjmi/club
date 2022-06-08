@@ -1,5 +1,4 @@
 <?php
-
 error_reporting(E_ALL & ~E_NOTICE);
 $dbh = mysqli_connect('localhost', 'root', '');
 if (!$dbh) {
