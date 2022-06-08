@@ -35,6 +35,11 @@ echo "<tr>
 <td>".$row['Posicio']."</td>
 <td>".$row['Numero']."</td>
 <td>".$row['Procedencia']."</td>
+<td>
+  <a href='insert.php?id=".$row['idSocis']."'><i class='bi bi-pencil'></i></a>
+  <a href='insert.php?id=".$row['idSocis']."'><i class='bi bi-trash'></i></a>
+</td>
+
 </tr>";
 ?>
   </tbody>
