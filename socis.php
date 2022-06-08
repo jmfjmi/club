@@ -42,8 +42,9 @@ echo "<tr>
 <td>".$row['email']."</td>
 <td>".$row['telefon']."</td>
 <td>
-  <a href='insert.php?id=".$row['idSocis']."'><i class='bi bi-pencil'></i></a>
-  
+  <a href='scripts/update.php?id=".$row['idSocis']."'><i class='bi bi-pencil'></i></a>
+  <a href='scripts/delete_soci.php?id=".$row['idSocis']."'><i class='bi bi-trash'></i></a>
+
 </td>
 </tr>";
 }

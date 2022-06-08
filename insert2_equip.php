@@ -24,13 +24,13 @@ if($soci != null){
 include 'includes/header.php';
 ?>
     <form action="<?=$action?>" target="" method="POST">
-    <input type="hidden" name="id" value="<?=$equip['idEquip']?>">
+    <input type="hidden" name="id" value="<?=$idEquip['idEquip']?>">
 
 	<label for="nombre">Premis</label>
-	<input type="text" name="Premis" value="<?=$equip['Premis']?>" id="Premis" placeholder="Escribe los premios de tu equipo"/>
+	<input type="text" name="Premis" value="<?=$idEquip['Premis']?>" id="Premis" placeholder="Escribe los premios de tu equipo"/>
 
 	<label for="nombre">Nom</label>
-	<input type="text" name="Nom" value="<?=$equip['Nom']?>" id="Nom"  placeholder="Escribe el nombre del equipo"/>
+	<input type="text" name="Nom" value="<?=$idEquip['Nom']?>" id="Nom"  placeholder="Escribe el nombre del equipo"/>
 
     <select name="fkidCategoria">
 		<?php
