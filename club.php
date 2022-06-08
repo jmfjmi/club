@@ -1,7 +1,7 @@
 <?php
 include 'includes/head.php';
 ?>
-</html>
+<h1>CLUBS</h1>
 
 <?php
 include 'includes/header.php';
