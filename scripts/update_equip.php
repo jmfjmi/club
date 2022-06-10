@@ -1,6 +1,7 @@
 <?php
 include '../includes/database.php';
 
+$idEquip= $_POST['idEquip'];
 $Premis = $_POST['Premis'];
 $Nom = $_POST['Nom'];
 $fkidClub = $_POST['fkidClub'];
