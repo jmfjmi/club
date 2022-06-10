@@ -12,8 +12,9 @@ $numero = $_POST['numero'];
 
 $query = "UPDATE Jugadors SET Nom='$nom' ,DNI='$DNI' , 1rCognom='$p_cognom' , 
 2nCognom='$s_cognom' , DataDeNaixament='$datadenaixament' , Posició='$posicio' , 
-Numero='$Numero'  WHERE DNI = '$DNI' ";
+Numero='$numero'  WHERE DNI = '$DNI' ";
 
+echo $query;
 
 $result = mysqli_query($dbh, $query);
 

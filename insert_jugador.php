@@ -33,7 +33,7 @@ include 'includes/header.php';
 
 
 	<label for="nombre">Nom</label>
-	<input type="text" name="Nom" value="<?=$jugadors['Nom']?>" id="nombre" placeholder="Escribe tu nombre"/>
+	<input type="text" name="Nom" value="<?=$jugadors['nom']?>" id="nombre" placeholder="Escribe tu nombre"/>
 
 	
     <label for="nombre">Llinatge</label>
@@ -49,13 +49,13 @@ include 'includes/header.php';
 	<input type="text" name="posicio"value="<?=$jugadors['Posició']?>" id="Posició" placeholder="Introdueix la teva posicio" required />
 
 	<label for="Numero">Numero</label>
-	<input type="number" name="Numero" value="<?=$jugadors['Numero']?>"id="telefon" placeholder="Introdueix el numero"/>
+	<input type="number" name="numero" value="<?=$jugadors['Numero']?>"id="Numero" placeholder="Introdueix el numero"/>
 	
 	<label for="nombre">Procedencia</label>
 	<input type="text" name="Procedencia" value="<?=$jugadors['Procedencia']?>"   placeholder="Escribe la teva procedencia"/>
 
 	
-	<select name="fkidequip">
+	<select name="fkidEquip">
 		<?php
 		$query = "SELECT * FROM Equip";
 		$result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));

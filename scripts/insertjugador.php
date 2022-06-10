@@ -1,24 +1,24 @@
 <?php
 
 include '../includes/database.php';
-$fkidEquip = $_POST['fkidequip'];
+$fkidEquip = $_POST['fkidEquip'];
 $DNI = $_POST['DNI'];
 $nom = $_POST['Nom'];
 $p_cognom = $_POST['pcognom'];
 $s_cognom = $_POST['scognom'];
 $datadenaixament = date('Y-m-d', strtotime($_POST['datadenaixament']));
-$Posicio= $_POST['Posició'];
-$Numero = $_POST['Numero'];
+$posicio= $_POST['posicio'];
+$numero = $_POST['numero'];
 $Procedencia = $_POST['Procedencia'];
 
 
 
 
-$query = "INSERT INTO Jugadors (fkidequip,DNI, Nom, 1rCognom, 2nCognom, DataDeNaixament, 
+$query = "INSERT INTO Jugadors (fkidEquip,DNI, Nom, 1rCognom, 2nCognom, DataDeNaixament, 
 Posició, Numero,Procedencia ) 
 VALUES ('$fkidEquip','$DNI','$nom', '$p_cognom', 
 '$s_cognom', '$datadenaixament', 
-'$Posicio', '$Numero','$Procedencia')";
+'$posicio', '$numero','$Procedencia')";
 
 echo $query ;
 
