@@ -29,8 +29,8 @@ echo "<tr>
 <td>".$row['fkidClub']."</td>
 <td>".$row['fkidCategoria']."</td>
 <td>
-  <a href='scripts/insert_equip.php?id=".$row['idEquip']."'><i class='bi bi-pencil'></i></a>
-  <a href='scripts/delete_equip.php?id=".$row['idEquip']."'>Eliminar</a>
+  <a href='insert2_equip.php?id=".$row['idEquip']."'><i class='bi bi-pencil'></i></a>
+  <a href='scripts/delete_soci.php?id=".$row['idEquip']."'><i class='bi bi-trash'></i></a>
 </td>
 </tr>";
 }
