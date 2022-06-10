@@ -1,10 +1,14 @@
 
-iframe{
-	text-align:center;	
-}  
+
+#taula{
+  border:3px solid white;
+
+}
+
+
 
 body{
-background-color:white
+background-color:white;
 }
 
 
@@ -31,7 +35,7 @@ td{
     font-size: 17PX;
     color: #000000;
     background-color: #8b0000;
-	border:3px solid #000;
+	border:3px solid white;
 }
 
 --------------------------------------------------------------------

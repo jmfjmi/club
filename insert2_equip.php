@@ -24,7 +24,7 @@ if($equip != null){
 include 'includes/header.php';
 ?>
     <form action="<?=$action?>" target="" method="POST">
-    <input type="hidden" name="id" value="<?=$equip['idEquip']?>">
+    <input type="hidden" name="idEquip" value="<?=$equip['idEquip']?>">
 
 	<label for="nombre">Premis</label>
 	<input type="text" name="Premis" value="<?=$equip['Premis']?>" id="Premis" placeholder="Escribe los premios de tu equipo"/>
