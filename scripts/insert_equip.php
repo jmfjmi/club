@@ -2,13 +2,14 @@
 
 include '../includes/database.php';
 
+$idEquip = $_POST['idEquip'];
 $Premis = $_POST['Premis'];
 $Nom = $_POST['Nom'];
 $fkidClub = $_POST['fkidClub'];
 $fkidCategoria = $_POST['fkidCategoria'];
 
-$query = "INSERT INTO Equip (Premis, Nom, fkidClub, fkidCategoria ) 
-VALUES ('$Premis', '$Nom', '$fkidClub', '$fkidCategoria' )";
+$query = "INSERT INTO Equip (idEquip,Premis, Nom, fkidClub, fkidCategoria ) 
+VALUES ('$idEquip','$Premis', '$Nom', '$fkidClub', '$fkidCategoria' )";
 
 $result = mysqli_query($dbh, $query);
 

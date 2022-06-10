@@ -36,8 +36,7 @@ echo "<tr>
 <td>".$row['Numero']."</td>
 <td>".$row['Procedencia']."</td>
 <td>
-  <a href='insert_jugador.php?id=".$row['DNI']."'><i class='bi bi-pencil'></i></a>
-  <a href='delete_jugador.php?id=".$row['DNI']."'><i class='bi bi-trash'></i></a>
+  <a href='insert_jugador.php?id=".$row[' DNI']."'><i class='bi bi-pencil'></i></a>
 </td>
 
 </tr>";
