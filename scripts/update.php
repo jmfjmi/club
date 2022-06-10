@@ -2,9 +2,9 @@
 include '../includes/database.php';
 
 $nom = $_POST['Nom'];
-$p_cognom = $_POST['pCognom'];
-$s_cognom = $_POST['sCognom'];
-$datadenaixament = $_POST['DataDeNaixament'];
+$p_cognom = $_POST['pcognom'];
+$s_cognom = $_POST['scognom'];
+$datadenaixament = $_POST['datadenaixament'];
 $email = $_POST['email'];
 $telefon = $_POST['telefon'];
 $idSocis = $_POST['id'];

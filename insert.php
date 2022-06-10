@@ -42,10 +42,10 @@ include 'includes/header.php';
 	<input type="text" name="telefon" value="<?=$soci['telefon']?>"id="telefon" placeholder="Introdueix el telefon"/>
 
 	<label for="email"> Email</label>
-	<input type="email" name="email"value="<?=$soci['email']?>" id="email" placeholder="Introdueix el teu email" required />
+	<input type="email" name="email" value="<?=$soci['email']?>" id="email" placeholder="Introdueix el teu email" required />
 
 	<label for="telefon">Data de naixament </label>
-	<input type="date" name="datadenaixament" id="datadenaixament " placeholder="Escriu la data del teu naixament "/>
+	<input type="date" name="datadenaixament" value="<?=$soci['DataDeNaixament']?>" id="datadenaixament " placeholder="Escriu la data del teu naixament "/>
 	
 	<input type="submit" name="enviar" value="ENVIAR"/>
 </form>

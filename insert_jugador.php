@@ -6,7 +6,7 @@ if(isset($_GET['id'])){
     $idjugadors = $_GET['id'];
     $query = "SELECT * FROM Jugadors WHERE DNI = '".$_GET['id']."' ";
     $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
-    $Jugadors = mysqli_fetch_assoc($result);
+    $jugadors = mysqli_fetch_assoc($result);
 }
 
 $action = 'scripts/insertjugador.php';
@@ -28,7 +28,8 @@ include 'includes/header.php';
 
 	
 	<label for="nombre">DNI</label>
-	<input type="text" name="DNI" value="<?=$jugadors['DNI']?>"   placeholder="Escribe tu DNI"/>
+	<input type="text" name="DNI" value="<?=$jugadors['DNI']?>"  <?=($jugadors != null) ? 'readonly' : '';?>  
+	 placeholder="Escribe tu DNI" />
 
 
 	<label for="nombre">Nom</label>
