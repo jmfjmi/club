@@ -42,8 +42,15 @@ echo "<tr>
 <td>".$row['email']."</td>
 <td>".$row['telefon']."</td>
 <td>
+<<<<<<< Updated upstream
+  <a href='scripts/update.php?id=".$row['idSocis']."'><i class='bi bi-pencil'></i></a>
+  <a href='scripts/delete_soci.php?id=".$row['idSocis']."'><i class='bi bi-trash'></i></a>
+
+=======
   <a href='insert.php?id=".$row['idSocis']."'><i class='bi bi-pencil'></i></a>
   
+  <a href='socis.php?id=".$row['idSocis']."'><i class='bi bi-trash'></i></a>
+>>>>>>> Stashed changes
 </td>
 </tr>";
 }

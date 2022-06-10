@@ -6,7 +6,7 @@ $Premis = $_POST['Premis'];
 $Nom = $_POST['Nom'];
 $fkidClub = $_POST['fkidClub'];
 $fkidCategoria = $_POST['fkidCategoria'];
-
+$idEquip = $_POST['id'];
 
 $query = "UPDATE Equip SET Premis='$Premis', Nom='$Nom', fkidClub='$fkidClub', 
 fkidCategoria='$fkidCategoria'  WHERE idEquip = '$idEquip' ";

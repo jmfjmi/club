@@ -1,7 +1,7 @@
 <html>
 <?php
 include 'includes/head.php';
-$jugadors = null;
+$idjugadors = null;
 if(isset($_GET['id'])){
     $idjugadors = $_GET['id'];
     $query = "SELECT * FROM Jugadors WHERE DNI = '".$_GET['id']."' ";
@@ -45,10 +45,10 @@ include 'includes/header.php';
 	<input type="date" name="datadenaixament" id="datadenaixament " placeholder="Escriu la data del teu naixament "/>
 	
 	<label for="Posició"> Posició</label>
-	<input type="text" name="posicio"value="<?=$jugadors['Posició']?>" id="Posició" placeholder="Introdueix la teva posicio" required />
+	<input type="number" name="posicio"value="<?=$jugadors['Posició']?>" id="Posició" placeholder="Introdueix la teva posicio" required />
 
 	<label for="Numero">Numero</label>
-	<input type="text" name="Numero" value="<?=$jugadors['Numero']?>"id="telefon" placeholder="Introdueix el numero"/>
+	<input type="number" name="Numero" value="<?=$jugadors['Numero']?>"id="telefon" placeholder="Introdueix el numero"/>
 
 	
 	<label for="nombre">Procedencia</label>
