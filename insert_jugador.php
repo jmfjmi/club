@@ -1,10 +1,10 @@
 <html>
 <?php
 include 'includes/head.php';
-$idjugadors = null;
-if(isset($_GET['id'])){
-    $idjugadors = $_GET['id'];
-    $query = "SELECT * FROM Jugadors WHERE DNI = '".$_GET['id']."' ";
+$DNI = null;
+if(isset($_GET['DNI'])){
+   	$DNI = $_GET['DNI'];
+    $query = "SELECT * FROM Jugadors WHERE DNI = '".$_GET['DNI']."' ";
     $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
     $jugadors = mysqli_fetch_assoc($result);
 }
@@ -46,11 +46,10 @@ include 'includes/header.php';
 	<input type="date" name="datadenaixament" id="datadenaixament " placeholder="Escriu la data del teu naixament "/>
 	
 	<label for="Posició"> Posició</label>
-	<input type="number" name="posicio"value="<?=$jugadors['Posició']?>" id="Posició" placeholder="Introdueix la teva posicio" required />
+	<input type="text" name="posicio"value="<?=$jugadors['Posició']?>" id="Posició" placeholder="Introdueix la teva posicio" required />
 
 	<label for="Numero">Numero</label>
 	<input type="number" name="Numero" value="<?=$jugadors['Numero']?>"id="telefon" placeholder="Introdueix el numero"/>
-
 	
 	<label for="nombre">Procedencia</label>
 	<input type="text" name="Procedencia" value="<?=$jugadors['Procedencia']?>"   placeholder="Escribe la teva procedencia"/>

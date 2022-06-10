@@ -2,10 +2,10 @@
 
 include '../includes/database.php';
 
-$id = $_GET['id'];
+$DNI = $_GET['DNI'];
 
 
-$query = "DELETE FROM Jugadors where idjugadors = '$id' ";
+$query = "DELETE FROM Jugadors where DNI = '$DNI' ";
 
 $result = mysqli_query($dbh, $query);
 
